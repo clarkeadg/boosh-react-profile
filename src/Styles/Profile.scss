@@ -1,0 +1,134 @@
+
+.profile {
+
+  padding-top: 17em;
+
+  .UserCoverPhotoProfile {
+    position: absolute;
+    top: 6em;
+    left: 0;
+    width: 100%;
+    height: 18.5em;
+    background-size: cover;
+  }
+
+  .profile-main {
+    position: relative;
+  }
+
+  .profile-nav-top {
+    position: relative;
+
+    .UserPhotoLarge {
+      position: absolute;
+      bottom: -0.5em;
+      left: 0;
+      border: 4px solid #fff;
+      border-radius: 0.5em;
+      overflow: hidden;
+    }
+
+    .portlet-items {
+      padding: 0.25em 1em 0;
+    }
+
+    ul.menu {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      vertical-align: bottom;
+
+      a {
+        padding: 0.5em 0;
+        border-bottom: 3px solid transparent;
+
+        &.active {
+          border-bottom: 3px solid #99033A;
+          .count {
+            color: #000;
+          }
+        }
+
+        &:hover {
+          border-bottom: 3px solid #99033A;
+          .label {
+            color: #99033A;
+            cursor: pointer;
+          }
+        }
+
+        .label {
+          display: block;
+          text-align: center;
+          color: #66757f;
+          background: none;
+        }
+
+        .count {
+          display: block;
+          text-align: center;
+          font-size: 1.5em;
+          color: #99033A;
+        }
+      }
+    }
+
+    .float-right {
+      padding-top: 0.25em;
+    }
+  }
+
+  .profile-meta {
+    i {
+      font-size: 1.25em;
+    }
+  }
+
+  .ProfileButtons {
+    padding: 0.5em 0;
+
+    button {
+      display: block;
+      width: 100%;
+      margin: 0.75em 0;
+    }
+  }
+
+  .meta {
+    padding: 0.5em;
+
+    button {
+      margin-left: 0.75em;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .profile {
+    .profile-nav-top {
+      ul.menu li {
+        display: inline-block;
+      }
+      .UserPhotoLarge {
+        bottom: 7em;
+        left: 1em;
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    .profile-nav-top {
+      .UserPhotoLarge {
+        bottom: auto;
+        top: -10em;
+        left: 1em;
+        width: 150px;
+      }
+    }
+  }
+}
+
