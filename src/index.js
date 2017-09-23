@@ -10,9 +10,9 @@ const ProfileRoutes    = require('./routes');
 module.exports = {
   getUsername:        ProfileSelector.getUsername,
   getSlug:            ProfileSelector.getSlug,
-  //AuthActions:      AuthActions,
-  //AuthSaga:         AuthSaga,
-  //AuthApi:          AuthApi,
+  //AuthActions:      AuthActions.default,
+  //AuthSaga:         AuthSaga.default,
+  //AuthApi:          AuthApi.default,
   //AuthReducer:      AuthReducer.default,
-  ProfileRoutes:       ProfileRoutes
+  ProfileRoutes:       ProfileRoutes.default
 }
